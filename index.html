@@ -20,7 +20,7 @@
   </head>
   <body>
     <div class="d-block justify-content-center col-9 h-25 base">
-      <div class="col h-25 color_buttons_zone" id="pantalla"></div>
+      <div class="col h-25 color_buttons_zone d-flex align-items-center justify-content-center" id="pantalla"></div>
       <div class=" ">
         <div class="d-flex p-2 justify-content-center row g-0 color_buttons_zone">
           <div
@@ -41,7 +41,7 @@
           <div
             class="col d-flex p-2 justify-content-center align-items-center button_space_color"
           >
-            <button type="button" onclick="getNumberPressed('+')" class="btn col-12 btn-dark">+</button>
+            <button type="button" onclick="operatorFun('+')" class="btn col-12 btn-dark">+</button>
           </div>
         </div>
 
@@ -64,7 +64,7 @@
           <div
             class="col d-flex p-2 justify-content-center align-items-center button_space_color"
           >
-            <button type="button" onclick="getNumberPressed('-')" class="btn col-12 btn-dark ">-</button>
+            <button type="button" onclick="operatorFun('-')" class="btn col-12 btn-dark ">-</button>
           </div>
         </div>
 
@@ -87,7 +87,7 @@
           <div
             class="col d-flex p-2 justify-content-center align-items-center button_space_color"
           >
-            <button type="button" onclick="getNumberPressed('*')" class="btn col-12 btn-dark ">x</button>
+            <button type="button" onclick="operatorFun('*')" class="btn col-12 btn-dark ">x</button>
           </div>
         </div>
 
@@ -110,7 +110,7 @@
           <div
             class="col d-flex p-2 justify-content-center align-items-center button_space_color"
           >
-            <button type="button" id="" class="btn col-12 btn-dark ">=</button>
+            <button type="button" onclick="result()" class="btn col-12 btn-dark ">=</button>
           </div>
         </div>
       </div>
